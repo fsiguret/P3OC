@@ -9,14 +9,11 @@ body {
   font-family: "Arial Black", sans-serif;
 }
 
-.main, .header {
-  display: flex;
-}
-
 .header {
   background-color: #579C87;
   text-align: center;
   height: 10rem;
+  display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
 }
@@ -27,11 +24,8 @@ body {
   letter-spacing: -0.2rem;
 }
 
-.main, .header {
-  display: flex;
-}
-
 .main {
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   margin: 7% 10%;

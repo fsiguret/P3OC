@@ -2,8 +2,8 @@
 @import "../utils/mixins";
 
 .main {
-  @include display($wrapped);
-  margin:7% 10%;
+  @include display($flex, $wrapped);
+  margin: 7% 10%;
   p{
     width: 100%;
   }
