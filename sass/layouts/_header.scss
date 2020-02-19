@@ -1,0 +1,11 @@
+@import "../utils/variables";
+@import "../utils/lists";
+
+.header {
+  background-color: $background-color;
+  text-align: center;
+  &__logo {
+    color: $color-text;
+    margin: nth($margin-size, 1);
+  }
+}
