@@ -1,7 +1,12 @@
+@import "../utils/lists";
+
 html {
   font-size: 100%;
 }
+
 body {
-  width: 50%;
-  margin: auto;
+  width: nth($width-size, 1);
+  margin: nth($margin-size, 2);
+  box-shadow: $box-shadow;
+  font-family: "Arial Black", sans-serif;
 }

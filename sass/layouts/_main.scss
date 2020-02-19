@@ -1,0 +1,10 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.main {
+  @include display($wrapped);
+  margin:7% 10%;
+  p{
+    width: 100%;
+  }
+}

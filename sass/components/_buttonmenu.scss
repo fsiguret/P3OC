@@ -1,0 +1,15 @@
+@import "../utils/variables";
+@import "../utils/lists";
+
+
+.main{
+  a{
+    width: nth($width-size,3);
+    margin: 0 auto 3rem auto;
+    box-shadow: $box-shadow;
+  }
+  img {
+    width: nth($width-size, 2);
+    height: nth($height-size, 1);
+  }
+}

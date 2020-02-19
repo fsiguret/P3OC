@@ -1,11 +1,16 @@
 @import "../utils/variables";
 @import "../utils/lists";
+@import "../utils/mixins";
 
 .header {
   background-color: $background-color;
   text-align: center;
+  height: nth($height-size, 2);
+  @include display();
   &__logo {
     color: $color-text;
-    margin: nth($margin-size, 1);
+    font-size: nth($font-size, 3);
+    margin: nth($margin-size, 2);
+    letter-spacing: -0.2rem;
   }
 }
