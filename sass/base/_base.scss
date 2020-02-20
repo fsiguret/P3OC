@@ -10,3 +10,12 @@ body {
   box-shadow: $box-shadow;
   font-family: "Arial", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+}

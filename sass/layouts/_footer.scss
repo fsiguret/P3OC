@@ -1,0 +1,14 @@
+@import "../utils/variables";
+@import "../utils/lists";
+@import "../utils/mixins";
+
+.footer {
+  @include display($flex, $default-wrap, space-between);
+  background-color: $background-color;
+  height: nth($height-size, 3);
+  a{
+    margin: auto nth($margin-size, 4);
+    color: $color-text;
+    font-size: nth($font-size, 3);
+  }
+}

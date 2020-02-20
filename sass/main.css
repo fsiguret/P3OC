@@ -1,7 +1,9 @@
-/*3 = margin shortly text*/
-/*1 = logo, 2 = shortly text*/
-/*3 = margin shortly text*/
-/*1 = logo, 2 = shortly text*/
+/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
+/* 3 = footer*/
+/*1 = logo ; 2 = shortly text ; 3 = text footer*/
+/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
+/* 3 = footer*/
+/*1 = logo ; 2 = shortly text ; 3 = text footer*/
 html {
   font-size: 100%;
 }
@@ -13,8 +15,18 @@ body {
   font-family: "Arial", sans-serif;
 }
 
-/*3 = margin shortly text*/
-/*1 = logo, 2 = shortly text*/
+a {
+  text-decoration: none;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+}
+
+/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
+/* 3 = footer*/
+/*1 = logo ; 2 = shortly text ; 3 = text footer*/
 .header {
   background-color: #579C87;
   text-align: center;
@@ -31,8 +43,9 @@ body {
   letter-spacing: -0.3rem;
 }
 
-/*3 = margin shortly text*/
-/*1 = logo, 2 = shortly text*/
+/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
+/* 3 = footer*/
+/*1 = logo ; 2 = shortly text ; 3 = text footer*/
 .main {
   margin: 7% 10%;
   display: flex;
@@ -53,8 +66,9 @@ body {
   margin: 1rem auto;
 }
 
-/*3 = margin shortly text*/
-/*1 = logo, 2 = shortly text*/
+/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
+/* 3 = footer*/
+/*1 = logo ; 2 = shortly text ; 3 = text footer*/
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -69,6 +83,23 @@ body {
 .menu img {
   width: 100%;
   height: 100%;
+}
+
+/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
+/* 3 = footer*/
+/*1 = logo ; 2 = shortly text ; 3 = text footer*/
+.footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #579C87;
+  height: 4rem;
+}
+.footer a {
+  margin: auto 2rem;
+  color: #FDCB46;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
