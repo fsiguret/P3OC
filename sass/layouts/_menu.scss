@@ -1,0 +1,14 @@
+@import "../utils/variables";
+@import "../utils/lists";
+@import "../utils/mixins";
+
+.main {
+  @include display($flex, $wrapped, $content-center);
+  text-align: center;
+  &__title {
+    width: nth($width-size, 5);
+  }
+  .section-menu {
+    width: nth($width-size, 5);
+  }
+}

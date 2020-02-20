@@ -1,0 +1,20 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+.article-menu {
+  &__title {
+    &::before{
+      display: block;
+      content: url("img/menus/menu-2b.png");
+
+    }
+  }
+  &__list {
+
+    text-align: left;
+    list-style: none;
+    span {
+
+    }
+  }
+}
+
