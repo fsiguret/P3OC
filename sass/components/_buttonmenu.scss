@@ -1,15 +1,16 @@
 @import "../utils/variables";
 @import "../utils/lists";
+@import "../utils/mixins";
 
-
-.main{
+.menu{
+  @include display($flex, $wrapped);
   a{
-    width: nth($width-size,3);
+    width: nth($width-size,2);
     margin: 0 auto 3rem auto;
     box-shadow: $box-shadow;
   }
   img {
-    width: nth($width-size, 2);
+    width: nth($width-size, 4);
     height: nth($height-size, 1);
   }
 }

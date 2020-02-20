@@ -1,8 +1,10 @@
 @import "variables";
-@import "placeholder";
 
-@mixin display($wrap:$default-wrap,$flex-dir:$default-flexdir) {
-  @extend %display-flex;
-  flex-wrap: $wrap;
-  flex-direction: $flex-dir;
+@mixin display($display : $flex, $wrap : $default-wrap, $justify-content : $flex-start, $flex-dir : $default-flexdir) {
+  display: $display;
+  @if ($display == $flex) {
+    flex-wrap: $wrap;
+    justify-content: $justify-content;
+    flex-direction: $flex-dir;
+  }
 }
