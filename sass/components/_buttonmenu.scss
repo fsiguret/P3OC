@@ -9,8 +9,22 @@
     margin: 0 auto 3rem auto;
     box-shadow: $box-shadow;
   }
-  img {
+  .article {
     width: nth($width-size, 4);
-    height: nth($height-size, 1);
+    height: 25rem;
+    @include display($flex, $wrapped, $content-center);
+    img {
+      width: 25%;
+      height: 25%;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      width: 100%;
+      margin: 0;
+    }
+    p {
+      margin: auto;
+    }
   }
 }

@@ -5,7 +5,7 @@
 .main {
   margin: 7% 10%;
   @include display($flex, $wrapped, $content-center);
-  .shortly{
+    .shortly{
     margin: nth($margin-size, 2);
     background-color: $background-color;
     color: $color-text;
