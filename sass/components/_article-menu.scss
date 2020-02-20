@@ -2,14 +2,16 @@
 @import "../utils/mixins";
 .article-menu {
   &__title {
-    &::before{
-      display: block;
-      content: url("img/menus/menu-2b.png");
-
+    &::before {
+      content: url("../img/svg/lignegauche.svg");
+      width: 50px;
+      height: 50px;
+    }
+    &::after {
+      content: url("../img/svg/lignedroite.svg");
     }
   }
   &__list {
-
     text-align: left;
     list-style: none;
     span {
@@ -17,4 +19,3 @@
     }
   }
 }
-

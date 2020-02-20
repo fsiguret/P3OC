@@ -60,11 +60,16 @@ a {
 }
 .main .section-menu {
   width: 75%;
+  background-color: pink;
 }
 
 .article-menu__title::before {
-  display: block;
-  content: url("img/menus/menu-2b.png");
+  content: url("../img/svg/lignegauche.svg");
+  width: 50px;
+  height: 50px;
+}
+.article-menu__title::after {
+  content: url("../img/svg/lignedroite.svg");
 }
 .article-menu__list {
   text-align: left;
