@@ -10,23 +10,14 @@
     margin-top: 4rem;
   }
   .section-menu {
+    box-shadow: $box-shadow;
+    margin-bottom: 3rem;
     width: nth($width-size, 5);
-    background-color: nth($color-menu, 1);
-    &__music-note {
-      margin-top: 3rem;
-      width: 10%;
-      height: 10%;
-    }
     &__title {
       margin: 0.5rem 0 4rem 0;
     }
     &__footer {
       margin-top: 3.5rem;
-      @include display($flex, $default-wrap, $content-center);
-    }
-    &__footer--note {
-      width: 5%;
-      height: 5%;
     }
   }
 }

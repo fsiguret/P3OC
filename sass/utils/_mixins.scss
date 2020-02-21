@@ -10,14 +10,32 @@
   }
 }
 
-@mixin gradientText($color, $size) {
-  color: linear-gradient($color $size, $color $size);
+@mixin gradientText($dir, $color, $size1, $color2, $color3, $size3:100%) {
+  background: linear-gradient($dir, $color $size1, $color2, $color3 $size3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@mixin colorMenu() {
-  @for $i from 1 through length($color-menu) {
+@mixin colorMenu($colorList) {
+  @for $i from 1 through length($colorList) {
     &__#{$i} {
-        background-color: nth($color-menu, $i);
+      background-color: nth($colorList, $i);
+    }
+  }
+}
+
+@mixin colorText($colorList) {
+  @for $i from 1 through length($colorList) {
+    &__#{$i} {
+      color: nth($colorList, $i);
+    }
+  }
+}
+
+@mixin svgColor($colorList) {
+  @for $i from 1 through length($colorList) {
+    &__img-#{$i} {
+      fill: nth($colorList, $i);
     }
   }
 }

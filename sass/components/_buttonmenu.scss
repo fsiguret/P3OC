@@ -14,7 +14,7 @@
     height: 25rem;
     @include display($flex, $wrapped, $content-center, $flex-column);
     text-align: center;
-    @include colorMenu();
+    @include colorMenu($color-menu);
     img {
       width: 25%;
       height: 25%;
