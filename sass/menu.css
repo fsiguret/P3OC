@@ -1,9 +1,3 @@
-/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
-/* 3 = footer*/
-/*1 = logo ; 2 = shortly text ; 3 = text footer*/
-/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
-/* 3 = footer*/
-/*1 = logo ; 2 = shortly text ; 3 = text footer*/
 html {
   font-size: 100%;
   height: 100%;
@@ -26,9 +20,6 @@ a {
   bottom: 0;
 }
 
-/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
-/* 3 = footer*/
-/*1 = logo ; 2 = shortly text ; 3 = text footer*/
 .header {
   background-color: #579C87;
   text-align: center;
@@ -45,9 +36,6 @@ a {
   letter-spacing: -0.3rem;
 }
 
-/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
-/* 3 = footer*/
-/*1 = logo ; 2 = shortly text ; 3 = text footer*/
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -57,27 +45,61 @@ a {
 }
 .main__title {
   width: 75%;
+  margin-top: 4rem;
 }
 .main .section-menu {
   width: 75%;
-  background-color: pink;
+  background-color: #fcdfdb;
+}
+.main .section-menu__music-note {
+  margin-top: 3rem;
+  width: 10%;
+  height: 10%;
+}
+.main .section-menu__title {
+  margin: 0.5rem 0 4rem 0;
+}
+.main .section-menu__footer {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: row;
+}
+.main .section-menu__footer--note {
+  width: 5%;
+  height: 5%;
 }
 
-.article-menu__title::before {
-  content: url("../img/svg/lignegauche.svg");
-  width: 50px;
-  height: 50px;
+.article-menu__header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 0 2.5rem;
 }
-.article-menu__title::after {
-  content: url("../img/svg/lignedroite.svg");
+.article-menu__title {
+  flex-grow: 1;
 }
 .article-menu__list {
   text-align: left;
   list-style: none;
+  margin-right: 2.5rem;
 }
-/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
-/* 3 = footer*/
-/*1 = logo ; 2 = shortly text ; 3 = text footer*/
+.article-menu__list li {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  line-height: 2.5rem;
+}
+.article-menu__list span {
+  text-align: right;
+  flex-grow: 1;
+  font-weight: bold;
+}
+
 .footer {
   display: flex;
   flex-wrap: nowrap;

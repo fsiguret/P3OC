@@ -1,9 +1,3 @@
-/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
-/* 3 = footer*/
-/*1 = logo ; 2 = shortly text ; 3 = text footer*/
-/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
-/* 3 = footer*/
-/*1 = logo ; 2 = shortly text ; 3 = text footer*/
 html {
   font-size: 100%;
   height: 100%;
@@ -26,9 +20,6 @@ a {
   bottom: 0;
 }
 
-/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
-/* 3 = footer*/
-/*1 = logo ; 2 = shortly text ; 3 = text footer*/
 .header {
   background-color: #579C87;
   text-align: center;
@@ -45,9 +36,6 @@ a {
   letter-spacing: -0.3rem;
 }
 
-/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
-/* 3 = footer*/
-/*1 = logo ; 2 = shortly text ; 3 = text footer*/
 .main {
   margin: 7% 10%;
   display: flex;
@@ -68,9 +56,6 @@ a {
   margin: 1rem auto;
 }
 
-/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
-/* 3 = footer*/
-/*1 = logo ; 2 = shortly text ; 3 = text footer*/
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -88,25 +73,35 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
+}
+.menu .article__1 {
+  background-color: #fcdfdb;
+}
+.menu .article__2 {
+  background-color: #fff5fe;
+}
+.menu .article__3 {
+  background-color: #f9f9f9;
+}
+.menu .article__4 {
+  background-color: #fdfffd;
 }
 .menu .article img {
   width: 25%;
   height: 25%;
-  margin: auto;
+  margin: 0 auto;
 }
 .menu .article h2 {
   text-align: center;
   width: 100%;
-  margin: 0;
+  margin: 0 0 2rem 0;
 }
 .menu .article p {
-  margin: auto;
+  margin: 0;
 }
 
-/*3 = margin shortly text ; 4 = margin L/R <a> footer*/
-/* 3 = footer*/
-/*1 = logo ; 2 = shortly text ; 3 = text footer*/
 .footer {
   display: flex;
   flex-wrap: nowrap;

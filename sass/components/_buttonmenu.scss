@@ -12,19 +12,22 @@
   .article {
     width: nth($width-size, 4);
     height: 25rem;
-    @include display($flex, $wrapped, $content-center);
+    @include display($flex, $wrapped, $content-center, $flex-column);
+    text-align: center;
+    @include colorMenu();
     img {
       width: 25%;
       height: 25%;
-      margin: auto;
+      margin: 0 auto;
     }
     h2 {
       text-align: center;
       width: 100%;
-      margin: 0;
+
+      margin : 0 0 2rem 0;
     }
     p {
-      margin: auto;
+      margin : 0;
     }
   }
 }
