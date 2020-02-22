@@ -89,38 +89,11 @@ a {
   font-weight: bold;
 }
 
-.section-menu {
-  background-color: #fff5fe;
-}
 .section-menu__header {
-  background: linear-gradient(to right, #c16800 30%, #975089, #5d39c6 60%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin: 6rem auto;
-  font-size: 2rem;
-}
-.section-menu .article-menu--1 {
-  color: #c16800;
-}
-.section-menu .article-menu--2 {
-  color: #975089;
-}
-.section-menu .article-menu--3 {
-  color: #5d39c6;
-}
-.section-menu .article-menu__header {
-  margin: 2.5rem 0;
-}
-.section-menu .article-menu__header h2 {
-  font-size: 1.12rem;
-  width: 49%;
 }
 .section-menu .article-menu__list {
-  font-size: 0.9rem;
-  margin: 0 8rem 4rem 5rem;
-}
-.section-menu .article-menu__list span {
-  font-weight: normal;
+  margin: 0 5rem;
 }
 
 .footer {
@@ -137,4 +110,4 @@ a {
   font-size: 1.5rem;
 }
 
-/*# sourceMappingURL=menu2.css.map */
+/*# sourceMappingURL=menu3.css.map */

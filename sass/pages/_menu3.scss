@@ -1,0 +1,12 @@
+@import "../utils/variables";
+
+.section-menu {
+  &__header {
+    margin: 6rem auto;
+  }
+  .article-menu {
+    &__list {
+      margin: 0 5rem;
+    }
+  }
+}

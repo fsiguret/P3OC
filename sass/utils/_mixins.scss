@@ -26,16 +26,8 @@
 
 @mixin colorText($colorList) {
   @for $i from 1 through length($colorList) {
-    &__#{$i} {
+    &--#{$i} {
       color: nth($colorList, $i);
-    }
-  }
-}
-
-@mixin svgColor($colorList) {
-  @for $i from 1 through length($colorList) {
-    &__img-#{$i} {
-      fill: nth($colorList, $i);
     }
   }
 }

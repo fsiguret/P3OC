@@ -1,0 +1,31 @@
+@import "../utils/variables";
+@import "../utils/lists";
+@import "../utils/mixins";
+
+.section-menu {
+  background-color: nth($color-menu,2);
+
+  &__header {
+    @include gradientText(to right, nth($colorTextMenu2,1),30%, nth($colorTextMenu2,2), nth($colorTextMenu2,3), 60%);
+    margin: 6rem auto;
+    font-size: nth($menu2FontSize,1);
+  }
+
+  .article-menu {
+    @include colorText($colorTextMenu2);
+    &__header {
+      margin: 2.5rem 0;
+      h2 {
+        font-size: nth($menu2FontSize, 2);
+        width: 49%;
+      }
+    }
+    &__list {
+      font-size: nth($menu2FontSize, 3);
+      margin : 0 8rem 4rem 5rem;
+      span {
+        font-weight: normal;
+      }
+    }
+  }
+}

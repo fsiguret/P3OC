@@ -13,9 +13,9 @@
     box-shadow: $box-shadow;
     margin-bottom: 3rem;
     width: nth($width-size, 5);
-    &__title {
-      margin: 0.5rem 0 4rem 0;
-    }
+    > h2 {
+       margin: 0.5rem 0 4rem 0;
+     }
     &__footer {
       margin-top: 3.5rem;
     }

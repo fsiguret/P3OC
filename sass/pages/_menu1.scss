@@ -3,17 +3,19 @@
 @import "../utils/mixins";
 .section-menu {
   background-color: nth($color-menu, 1);
-  &__music-note {
-    margin-top: 3rem;
-    width: 10%;
-    height: 10%;
+  &__header {
+    img {
+      margin-top: 3rem;
+      width: 10%;
+      height: 10%;
+    }
   }
   &__footer {
     @include display($flex, $default-wrap, $content-center);
     margin-bottom: 3.5rem;
-  }
-  &__footer--note {
-    width: 5%;
-    height: 5%;
+    img {
+      width: 5%;
+      height: 5%;
+    }
   }
 }

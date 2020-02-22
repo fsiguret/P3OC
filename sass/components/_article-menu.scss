@@ -4,10 +4,11 @@
 .article-menu {
   &__header {
     @include display($flex);
-    margin: 0 2.5rem;
-  }
-  &__title {
-    flex-grow: 1;
+    margin: 2.5rem 2.5rem;
+    h2 {
+      flex-grow: 1;
+      margin: 0;
+    }
   }
   &__list {
     text-align: left;
