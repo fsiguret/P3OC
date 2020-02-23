@@ -23,6 +23,9 @@
     &__list {
       font-size: nth($menu2FontSize, 3);
       margin : 0 8rem 4rem 5rem;
+      @include mobileOnly($mobileSize) {
+        margin : 0 2rem 4rem 1rem;
+      }
       span {
         font-weight: normal;
       }

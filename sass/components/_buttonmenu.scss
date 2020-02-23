@@ -4,10 +4,18 @@
 
 .menu{
   @include display($flex, $wrapped);
+  @include mobileOnly($mobileSize) {
+    flex-direction: column;
+    margin: auto;
+  }
   a{
     width: nth($width-size,2);
     margin: 0 auto 3rem auto;
     box-shadow: $box-shadow;
+    @include mobileOnly($mobileSize) {
+      margin: 5% 0;
+      width: 100%;
+    }
   }
   .article {
     width: nth($width-size, 4);
@@ -28,6 +36,31 @@
     }
     p {
       margin : 0;
+    }
+    &__1 {
+      color : nth($colorTextButtonMenu,1);
+      p {
+        @include buttonText(nth($font,1),sans-serif, 2rem);
+        text-transform: uppercase;
+      }
+    }
+    &__2 {
+      color: nth($colorTextButtonMenu,2);
+      p {
+        @include buttonText(nth($font,2),serif, 3rem);
+      }
+    }
+    &__3 {
+      color: nth($colorTextButtonMenu,3);
+      p {
+        @include buttonText(nth($font,1),sans-serif, 3rem);
+      }
+    }
+    &__4 {
+      color: nth($colorTextButtonMenu,4);
+      p {
+        @include buttonText(nth($font,1),sans-serif, 3rem);
+      }
     }
   }
 }

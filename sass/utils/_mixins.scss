@@ -1,5 +1,6 @@
 @import "variables";
 @import "lists";
+@import "maps";
 
 @mixin display($display : $flex, $wrap : $default-wrap, $justify-content : $flex-start, $flex-dir : $default-flexdir) {
   display: $display;
@@ -30,4 +31,23 @@
       color: nth($colorList, $i);
     }
   }
+}
+
+@mixin responsive() {
+  @each $key, $value in $breakpoint {
+      @media screen and (max-width: map-get($value, size)) {
+        width: map_get($value, width);
+      }
+  }
+}
+
+@mixin mobileOnly($mobileSize) {
+    @media screen and (max-width: $mobileSize){
+      @content;
+    }
+}
+
+@mixin buttonText($font,$serif, $size) {
+  font-family: $font, $serif;
+  font-size: $size;
 }

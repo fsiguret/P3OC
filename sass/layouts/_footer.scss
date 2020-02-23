@@ -10,5 +10,8 @@
     margin: auto nth($margin-size, 4);
     color: $color-text;
     font-size: nth($font-size, 3);
+    @include mobileOnly($mobileSize) {
+      font-size: nth($fontSizeMobile, 2);
+    }
   }
 }
