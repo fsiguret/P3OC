@@ -3,6 +3,7 @@
 @import "../utils/mixins";
 
 .section-menu {
+  background-color: #fdfffd;
   &__header {
     font-family: nth($fontNameMenu,4);
     @include gradientText(to right, nth($colorGradMenu4,1), nth($colorGradMenu4,2));
