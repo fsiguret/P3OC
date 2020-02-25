@@ -2,13 +2,13 @@
 @import "../utils/lists";
 @import "../utils/mixins";
 
-.menu{
+.menu {
   @include display($flex, $wrapped);
   @include mobileOnly($mobileSize) {
     flex-direction: column;
     margin: auto;
   }
-  a{
+  a {
     width: nth($width-size,2);
     margin: 0 auto 3rem auto;
     box-shadow: $box-shadow;
@@ -22,7 +22,7 @@
     height: 25rem;
     @include display($flex, $wrapped, $content-center, $flex-column);
     text-align: center;
-    @include colorMenu($color-menu);
+    @include decoButton(1rem, 2rem);
     img {
       width: 25%;
       height: 25%;
@@ -31,35 +31,25 @@
     h2 {
       text-align: center;
       width: 100%;
-
+      font-weight: normal;
       margin : 0 0 2rem 0;
     }
     p {
       margin : 0;
     }
-    &__1 {
-      color : nth($colorTextButtonMenu,1);
-      p {
-        @include buttonText(nth($font,1),sans-serif, 2rem);
-        text-transform: uppercase;
-      }
-    }
     &__2 {
-      color: nth($colorTextButtonMenu,2);
-      p {
-        @include buttonText(nth($font,2),serif, 3rem);
+      h2 {
+        @include gradientText(to right, nth($colorGradMenu2,1), nth($colorGradMenu2,2));
       }
     }
     &__3 {
-      color: nth($colorTextButtonMenu,3);
-      p {
-        @include buttonText(nth($font,1),sans-serif, 3rem);
+      h2 {
+        @include gradientText(to right, nth($colorGradMenu3,1), nth($colorGradMenu3,2));
       }
     }
     &__4 {
-      color: nth($colorTextButtonMenu,4);
-      p {
-        @include buttonText(nth($font,1),sans-serif, 3rem);
+      h2 {
+        @include gradientText(to right, nth($colorGradMenu4,1), nth($colorGradMenu4,2));
       }
     }
   }

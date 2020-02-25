@@ -121,15 +121,44 @@ a {
 }
 .menu .article__1 {
   background-color: #fcdfdb;
+  color: #3C1218;
+  font-family: "Devonshire";
+  font-size: 1rem;
+}
+.menu .article__1 p {
+  font-family: "Segoe Print", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 .menu .article__2 {
   background-color: #fff5fe;
+  color: #c16800;
+  font-family: "Croissant One";
+  font-size: 1rem;
+}
+.menu .article__2 p {
+  font-family: "Baskerville", serif;
+  font-size: 2rem;
 }
 .menu .article__3 {
   background-color: #f9f9f9;
+  color: #0887fb;
+  font-family: "Dancing Script";
+  font-size: 1rem;
+}
+.menu .article__3 p {
+  font-family: "Segoe Print", sans-serif;
+  font-size: 2rem;
 }
 .menu .article__4 {
   background-color: #fdfffd;
+  color: #72bf56;
+  font-family: "Kaushan Script";
+  font-size: 1rem;
+}
+.menu .article__4 p {
+  font-family: "Segoe Print", sans-serif;
+  font-size: 2rem;
 }
 .menu .article img {
   width: 25%;
@@ -139,39 +168,26 @@ a {
 .menu .article h2 {
   text-align: center;
   width: 100%;
+  font-weight: normal;
   margin: 0 0 2rem 0;
 }
 .menu .article p {
   margin: 0;
 }
-.menu .article__1 {
-  color: #3C1218;
+.menu .article__2 h2 {
+  background: linear-gradient(to right, #c16800, #925FFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.menu .article__1 p {
-  font-family: "Segoe Print", sans-serif;
-  font-size: 2rem;
-  text-transform: uppercase;
+.menu .article__3 h2 {
+  background: linear-gradient(to right, #274E9D, #13a8fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.menu .article__2 {
-  color: #c16800;
-}
-.menu .article__2 p {
-  font-family: "Baskerville", serif;
-  font-size: 3rem;
-}
-.menu .article__3 {
-  color: #0887fb;
-}
-.menu .article__3 p {
-  font-family: "Segoe Print", sans-serif;
-  font-size: 3rem;
-}
-.menu .article__4 {
-  color: #72bf56;
-}
-.menu .article__4 p {
-  font-family: "Segoe Print", sans-serif;
-  font-size: 3rem;
+.menu .article__4 h2 {
+  background: linear-gradient(to right, #72bf56, #C0D673);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer {

@@ -86,7 +86,7 @@ a {
   flex-direction: row;
   margin: 2.5rem 2.5rem;
 }
-.article-menu__header h2 {
+.article-menu__header h3 {
   flex-grow: 1;
   margin: 0;
 }
@@ -101,7 +101,7 @@ a {
   justify-content: flex-start;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.3rem;
 }
 .article-menu__list span {
   text-align: right;
@@ -111,12 +111,14 @@ a {
 
 .section-menu {
   background-color: #fff5fe;
+  font-family: "Croisant One", serif;
 }
 .section-menu__header {
-  background: linear-gradient(to right, #c16800 30%, #975089, #5d39c6 60%);
+  background: linear-gradient(to right, #c16800, #925FFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 6rem auto;
+  font-family: "Croissant One", serif;
   font-size: 2rem;
 }
 .section-menu .article-menu--1 {
@@ -131,12 +133,13 @@ a {
 .section-menu .article-menu__header {
   margin: 2.5rem 0;
 }
-.section-menu .article-menu__header h2 {
-  font-size: 1.12rem;
+.section-menu .article-menu__header h3 {
   width: 49%;
 }
+.section-menu .article-menu__header .right {
+  transform: scaleX(-1);
+}
 .section-menu .article-menu__list {
-  font-size: 0.9rem;
   margin: 0 8rem 4rem 5rem;
 }
 @media screen and (max-width: 599px) {

@@ -86,7 +86,7 @@ a {
   flex-direction: row;
   margin: 2.5rem 2.5rem;
 }
-.article-menu__header h2 {
+.article-menu__header h3 {
   flex-grow: 1;
   margin: 0;
 }
@@ -101,7 +101,7 @@ a {
   justify-content: flex-start;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.3rem;
 }
 .article-menu__list span {
   text-align: right;
@@ -109,25 +109,45 @@ a {
   font-weight: bold;
 }
 
+.section-menu {
+  background-color: #f9f9f9;
+  font-family: "Dancing Script", sans-serif;
+}
 .section-menu__header {
+  background: linear-gradient(to right, #274E9D, #13a8fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 2rem;
   margin: 6rem auto;
+}
+.section-menu .article-menu {
+  font-family: "Segoe Print";
+}
+.section-menu .article-menu__header .left {
+  transform: scaleX(-1);
 }
 .section-menu .article-menu__header img {
   width: 35%;
 }
-.section-menu .article-menu__header h2 {
+.section-menu .article-menu__header h3 {
   font-size: 1rem;
   font-weight: normal;
 }
 .section-menu .article-menu__list {
-  margin: 0 9rem 3rem 5rem;
+  margin: 0 4rem 3rem 5rem;
   font-size: 0.9rem;
 }
 @media screen and (max-width: 599px) {
   .section-menu .article-menu__list {
     margin: 0 2rem 3rem 1rem;
   }
+}
+.section-menu .article-menu__list li {
+  margin-bottom: 1rem;
+}
+.section-menu .article-menu__list span {
+  font-weight: normal;
+  font-size: 1.05rem;
 }
 
 .footer {
