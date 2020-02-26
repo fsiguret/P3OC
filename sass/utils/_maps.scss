@@ -19,4 +19,10 @@ $breakpoint : (
 );
 
 
-
+$mapDelay : (
+        suspension : (
+                1: 0.1s,
+                2: 0.2s,
+                3: 0.3s
+        )
+);
