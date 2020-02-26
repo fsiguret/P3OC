@@ -11,7 +11,7 @@
   a {
     width: nth($width-size,2);
     margin: 0 auto 3rem auto;
-    box-shadow: $box-shadow;
+
     @include mobileOnly($mobileSize) {
       margin: 5% 0;
       width: 100%;
@@ -20,9 +20,16 @@
   .article {
     width: nth($width-size, 4);
     height: 25rem;
+    box-shadow: $box-shadow;
     @include display($flex, $wrapped, $content-center, $flex-column);
     text-align: center;
     @include decoButton(1rem, 2rem);
+    transition: transform, 400ms;
+    opacity: 1;
+    &:hover {
+      transform: scale(1.15);
+      opacity: 0.5;
+    }
     img {
       width: 25%;
       height: 25%;
