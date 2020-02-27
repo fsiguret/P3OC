@@ -87,8 +87,18 @@ a {
   margin: 2.5rem 2.5rem;
 }
 .article-menu__header h3 {
-  flex-grow: 1;
-  margin: 0;
+  margin: 0 auto;
+}
+.article-menu__header h3::after {
+  content: "";
+  display: block;
+  border-bottom: solid 2px;
+  width: 100%;
+  max-width: 0;
+  transition: max-width, 200ms linear;
+}
+.article-menu__header h3:hover:after {
+  max-width: 100%;
 }
 .article-menu__list {
   text-align: left;
@@ -114,7 +124,7 @@ a {
   font-family: "Croisant One", serif;
 }
 .section-menu__header {
-  background: linear-gradient(to right, #c16800, #925FFF);
+  background: linear-gradient(to right, #c16800, #9966FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 6rem auto;
@@ -133,8 +143,9 @@ a {
 .section-menu .article-menu__header {
   margin: 2.5rem 0;
 }
-.section-menu .article-menu__header h3 {
-  width: 49%;
+.section-menu .article-menu__header img {
+  width: 33%;
+  height: 50%;
 }
 .section-menu .article-menu__header .right {
   transform: scaleX(-1);

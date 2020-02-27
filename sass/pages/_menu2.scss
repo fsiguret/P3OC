@@ -16,8 +16,9 @@
     @include colorText($colorTextMenu2);
     &__header {
       margin: 2.5rem 0;
-      h3 {
-        width: 49%;
+      img {
+        width: 33%;
+        height: 50%;
       }
       .right {
         transform: scaleX(-1);
