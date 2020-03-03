@@ -16,14 +16,6 @@
   border-radius: 12px;
   text-align: center;
   width: nth($width-size, 3);
-
-    &:hover {
-      span {
-        -webkit-animation: bounce 0.3s infinite alternate;
-        @include animSuspension(3);
-      }
-    }
-
     &__text {
       font-size: nth($font-size, 2);
       margin: nth($margin-size, 3) auto;
@@ -34,6 +26,8 @@
         position: relative;
         top : 0.1px;
         display: inline-block;
+        -webkit-animation: bounce 0.3s infinite alternate;
+        @include animSuspension(3);
       }
     }
   }

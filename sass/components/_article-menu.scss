@@ -11,12 +11,12 @@
       &::after {
         content: "";
         display: block;
-        border-bottom: solid 1px;
+        border-bottom: solid 2px;
         width: 100%;
         max-width: 0;
         transition: max-width, 200ms linear;
       }
-      &:hover:after {
+      &:hover::after {
         max-width: 100%;
       }
     }
