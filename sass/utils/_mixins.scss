@@ -78,7 +78,7 @@
   @for $i from 1 through $nbPoint {
     &:nth-child(#{$i}) {
       @each $key, $value in $mapDelay {
-        -webkit-animation-delay: map-get($value, $i);
+        animation-delay: map-get($value, $i);
       }
     }
   }

@@ -23,18 +23,15 @@
         font-size: nth($fontSizeMobile, 1);
       }
       span {
-        position: relative;
-        top : 0.1px;
-        display: inline-block;
-        -webkit-animation: bounce 0.3s infinite alternate;
+        opacity: 1;
+        animation: write 0.9s infinite;
         @include animSuspension(3);
       }
     }
   }
 }
-
-@-webkit-keyframes bounce {
+@keyframes write {
   100% {
-    top: -10px;
+    opacity:0;
   }
 }

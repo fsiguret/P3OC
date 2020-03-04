@@ -89,24 +89,22 @@ a {
   }
 }
 .main .shortly__text span {
-  position: relative;
-  top: 0.1px;
-  display: inline-block;
-  -webkit-animation: bounce 0.3s infinite alternate;
+  opacity: 1;
+  animation: write 0.9s infinite;
 }
 .main .shortly__text span:nth-child(1) {
-  -webkit-animation-delay: 0.1s;
+  animation-delay: 0s;
 }
 .main .shortly__text span:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 .main .shortly__text span:nth-child(3) {
-  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.4s;
 }
 
-@-webkit-keyframes bounce {
+@keyframes write {
   100% {
-    top: -10px;
+    opacity: 0;
   }
 }
 .article-menu {
@@ -166,7 +164,6 @@ a {
 .main-menu .section-menu {
   box-shadow: 0px 0px 3px 0px grey;
   margin-bottom: 3rem;
-  width: 75%;
 }
 .main-menu .section-menu h2 {
   margin: 0.5rem 0 4rem 0;
@@ -184,7 +181,8 @@ a {
 @media screen and (max-width: 599px) {
   .menu {
     flex-direction: column;
-    margin: auto;
+    flex-wrap: nowrap;
+    margin: 15%;
   }
 }
 .menu a {
@@ -201,12 +199,7 @@ a {
   width: 100%;
   height: 25rem;
   box-shadow: 0px 0px 3px 0px grey;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
   text-align: center;
-  transition: transform, 400ms;
   opacity: 1;
 }
 .menu .article__1 {
@@ -250,20 +243,28 @@ a {
   font-family: "Segoe Print", sans-serif;
   font-size: 2rem;
 }
-.menu .article:hover {
+.menu .article div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  transition: transform, 400ms;
+}
+.menu .article div:hover {
   transform: scale(1.15);
   opacity: 0.5;
 }
 .menu .article img {
-  width: 25%;
-  height: 25%;
+  width: 50px;
+  height: 50px;
   margin: 0 auto;
 }
 .menu .article h2 {
   text-align: center;
-  width: 100%;
   font-weight: normal;
-  margin: 0 0 2rem 0;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 .menu .article p {
   margin: 0;
@@ -272,6 +273,7 @@ a {
   background: linear-gradient(to right, #FF8C00, #9966FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 1.1rem;
 }
 .menu .article__3 h2 {
   background: linear-gradient(to right, #0000CD, #00BFFF);
@@ -318,7 +320,10 @@ a {
 .menu1 .section-menu .article-menu {
   font-family: "Segoe Print";
 }
-.menu1 .section-menu .article-menu h3 {
+.menu1 .section-menu .article-menu__header img {
+  width: 33%;
+}
+.menu1 .section-menu .article-menu__header h3 {
   font-size: 1.5rem;
 }
 .menu1 .section-menu .article-menu__list {
@@ -365,6 +370,7 @@ a {
 }
 .menu2 .section-menu .article-menu__header {
   margin: 2.5rem 0;
+  padding: 0 1rem;
 }
 .menu2 .section-menu .article-menu__header img {
   width: 33%;
@@ -374,7 +380,7 @@ a {
   transform: scaleX(-1);
 }
 .menu2 .section-menu .article-menu__list {
-  margin: 0 8rem 4rem 5rem;
+  margin: 0 7rem 4rem 5rem;
 }
 @media screen and (max-width: 599px) {
   .menu2 .section-menu .article-menu__list {
@@ -411,7 +417,7 @@ a {
   font-weight: normal;
 }
 .menu3 .section-menu .article-menu__list {
-  margin: 0 4rem 3rem 5rem;
+  margin: 0 7rem 3rem 5rem;
   font-size: 0.9rem;
 }
 @media screen and (max-width: 599px) {
@@ -454,7 +460,7 @@ a {
   font-weight: normal;
 }
 .menu4 .section-menu .article-menu__list {
-  margin: 0 3.9rem 3rem 3.5rem;
+  margin: 0 6rem 3rem 3.5rem;
   font-size: 0.9rem;
 }
 @media screen and (max-width: 599px) {
@@ -486,27 +492,42 @@ a {
 }
 .footer a:hover {
   display: inline-block;
-  animation: wiggle 1s infinite alternate;
+  animation: wiggle 0.5s infinite;
 }
 
 @-webkit-keyframes wiggle {
   0% {
-    transform: rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
   }
   20% {
-    transform: rotate(5deg);
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
   }
   40% {
-    transform: rotate(-5deg);
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
   }
   60% {
-    transform: rotate(5deg);
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
   }
   80% {
-    transform: rotate(-5deg);
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 

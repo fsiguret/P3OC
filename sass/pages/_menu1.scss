@@ -21,8 +21,13 @@
     }
     .article-menu {
       font-family: nth($font,1);
-      h3 {
-        font-size: nth($menuFontSize,2);
+      &__header {
+        img {
+          width: 33%;
+        }
+        h3 {
+          font-size: nth($menuFontSize,2);
+        }
       }
       &__list {
         font-size: nth($menuFontSize,3);
