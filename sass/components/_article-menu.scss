@@ -6,6 +6,9 @@
   &__header {
     @include display($flex);
     margin: 2.5rem 2.5rem 1rem 2.5rem;
+    img {
+      margin: auto 0;
+    }
     h3 {
       margin: 0 auto;
       &::after {

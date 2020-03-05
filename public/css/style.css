@@ -71,6 +71,9 @@ a {
     flex-direction: column;
   }
 }
+.main p {
+  width: 100%;
+}
 .main .shortly {
   margin: auto;
   background-color: #579C87;
@@ -116,6 +119,9 @@ a {
   justify-content: flex-start;
   flex-direction: row;
   margin: 2.5rem 2.5rem 1rem 2.5rem;
+}
+.article-menu__header img {
+  margin: auto 0;
 }
 .article-menu__header h3 {
   margin: 0 auto;
