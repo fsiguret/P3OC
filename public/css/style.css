@@ -71,7 +71,7 @@ a {
     flex-direction: column;
   }
 }
-.main p {
+.main > p {
   width: 100%;
 }
 .main .shortly {
