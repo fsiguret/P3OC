@@ -1,6 +1,5 @@
 @import "variables";
 @import "lists";
-<<<<<<< HEAD
 @import "maps";
 
 @mixin display($display : $flex, $wrap : $default-wrap, $justify-content : $flex-start, $flex-dir : $default-flexdir) {
@@ -74,7 +73,6 @@
     }
   }
 }
-
 @mixin animSuspension($nbPoint) {
   @for $i from 1 through $nbPoint {
     &:nth-child(#{$i}) {
@@ -83,12 +81,8 @@
       }
     }
   }
-=======
-@import "placeholder";
-
 @mixin display($flex-dis:$flex, $wrap:$default-wrap, $flex-dir:$default-flexdir) {
   display: $flex-dis;
   flex-wrap: $wrap;
   flex-direction: $flex-dir;
->>>>>>> 1fa152fe90335dc005347e1c31ab0dacc6fc428a
 }
