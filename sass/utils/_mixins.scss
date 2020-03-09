@@ -81,8 +81,4 @@
       }
     }
   }
-@mixin display($flex-dis:$flex, $wrap:$default-wrap, $flex-dir:$default-flexdir) {
-  display: $flex-dis;
-  flex-wrap: $wrap;
-  flex-direction: $flex-dir;
 }
