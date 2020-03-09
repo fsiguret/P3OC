@@ -251,7 +251,7 @@ a {
   font-size: 2rem;
 }
 .menu .article:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .menu .article div {
   display: flex;

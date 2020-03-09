@@ -27,7 +27,7 @@
     opacity: 1;
     transition: opacity, 400ms;
     &:hover {
-      opacity: 0.6;
+      opacity: 0.5;
     }
     div {
       @include display($flex, $wrapped, $content-center, $flex-column);
