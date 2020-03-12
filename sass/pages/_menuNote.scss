@@ -2,7 +2,7 @@
 @import "../utils/lists";
 @import "../utils/mixins";
 
-.menu1 {
+.main--note {
   .section-menu {
     background-color: nth($color-menu, 1);
     color : nth($colorTextButtonMenu,1);

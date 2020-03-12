@@ -2,13 +2,13 @@
 @import "../utils/lists";
 @import "../utils/mixins";
 
-.menu4 {
+.main--delice {
   .section-menu {
-    background-color: nth($color-menu,4);
+    background-color: nth($color-menu,3);
+    font-family: nth($fontNameMenu,3), sans-serif;
     &__header {
-      font-family: nth($fontNameMenu,4);
-      @include gradientText(to right, nth($colorGradMenu4,1), nth($colorGradMenu4,2));
-      font-size: nth($menu4FontSize, 1);
+      @include gradientText(to right, nth($colorGradMenuDelice,1), nth($colorGradMenuDelice,2));
+      font-size: nth($menuDeliceFontSize, 1);
       margin: 6rem auto;
     }
     .article-menu {
@@ -18,23 +18,25 @@
           transform: scaleX(-1);
         }
         img {
-          width: 37%;
-          height: 50%;
-          margin: auto 0;
+          width: 35%;
         }
         h3{
-          font-size: nth($menu4FontSize, 2);
+          font-size: nth($menuDeliceFontSize, 2);
           font-weight: normal;
         }
       }
       &__list {
-        margin: 0 6rem 3rem 3.5rem;
+        margin: 0 7rem 3rem 5rem;
         @include mobileOnly($mobileSize) {
           margin: 0 2rem 3rem 1rem;
         }
-        font-size: nth($menu4FontSize, 3);
+        font-size: nth($menuDeliceFontSize, 3);
         li {
           margin-bottom: 0.8rem;
+        }
+        span {
+          font-weight: normal;
+          font-size: 1.05rem;
         }
       }
     }
