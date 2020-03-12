@@ -12,7 +12,7 @@
   a{
     width: nth($width-size,2);
     margin: 0 auto 3rem auto;
-
+    @include decoButton(1rem, 2rem, $nbArticle);
     @include mobileOnly($mobileSize) {
       margin: 5% 0;
       width: 100%;
@@ -23,7 +23,6 @@
     height: 25rem;
     box-shadow: $box-shadow;
     text-align: center;
-    @include decoButton(1rem, 2rem);
     opacity: 1;
     transition: opacity, 400ms;
     &:hover {
@@ -51,20 +50,20 @@
     p {
       margin : 0;
     }
-    &__2 {
+    &__chic {
       h2 {
-        @include gradientText(to right, nth($colorGradMenu2,1), nth($colorGradMenu2,2));
+        @include gradientText(to right, nth($colorGradMenuChic,1), nth($colorGradMenuChic,2));
         font-size: nth($fontSizeTitleButton,1);
       }
     }
-    &__3 {
+    &__delice {
       h2 {
-        @include gradientText(to right, nth($colorGradMenu3,1), nth($colorGradMenu3,2));
+        @include gradientText(to right, nth($colorGradMenuDelice,1), nth($colorGradMenuDelice,2));
       }
     }
-    &__4 {
+    &__palette {
       h2 {
-        @include gradientText(to right, nth($colorGradMenu4,1), nth($colorGradMenu4,2));
+        @include gradientText(to right, nth($colorGradMenuPalette,1), nth($colorGradMenuPalette,2));
       }
     }
   }

@@ -17,17 +17,9 @@
   -webkit-text-fill-color: transparent;
 }
 
-@mixin colorMenu($colorList) {
-  @for $i from 1 through length($colorList) {
-    &__#{$i} {
-      background-color: nth($colorList, $i);
-    }
-  }
-}
-
 @mixin colorText($colorList) {
   @for $i from 1 through length($colorList) {
-    &--#{$i} {
+    &:nth-child(#{$i}) {
       color: nth($colorList, $i);
     }
   }
@@ -47,14 +39,9 @@
     }
 }
 
-@mixin buttonText($font,$serif, $size) {
-  font-family: $font, $serif;
-  font-size: $size;
-}
-
-@mixin decoButton($sizeTitle, $sizeText) {
-  @for $i from 1 through $nbArticle {
-    &__#{$i} {
+@mixin decoButton($sizeTitle, $sizeText, $nbArt) {
+  @for $i from 1 through $nbArt {
+    &:nth-child(#{$i}) {
       background-color: nth($color-menu, $i);
       color : nth($colorTextButtonMenu, $i);
       font-family: nth($fontNameMenu, $i);

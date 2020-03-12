@@ -2,19 +2,19 @@
 @import "../utils/lists";
 @import "../utils/mixins";
 
-.menu2 {
+.main--chic {
   .section-menu {
     background-color: nth($color-menu,2);
     font-family: "Croisant One", serif;
     &__header {
-      @include gradientText(to right, nth($colorGradMenu2,1), nth($colorGradMenu2,2));
+      @include gradientText(to right, nth($colorGradMenuChic,1), nth($colorGradMenuChic,2));
       margin: 6rem auto;
       font-family: "Croissant One", serif;
-      font-size: nth($menu2FontSize,1);
+      font-size: nth($menuChicFontSize,1);
     }
 
     .article-menu {
-      @include colorText($colorTextMenu2);
+      @include colorText($colorTextMenuChic);
       &__header {
         margin: 2.5rem 0;
         padding: 0 1rem;
@@ -33,7 +33,7 @@
         }
         span {
           font-weight: normal;
-          font-size: nth($menu2FontSize,2);
+          font-size: nth($menuChicFontSize,2);
         }
       }
     }
